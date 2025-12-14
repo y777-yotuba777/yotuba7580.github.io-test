@@ -1,0 +1,29 @@
+License Notice
+==============
+
+Unless otherwise expressly stated, all content created by y777_yotuba777 
+is dedicated to the public domain under the CC0 1.0 Universal license.
+• You may freely copy, modify, distribute, and use these materials for any purpose
+• No attribution required
+• Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+EXCEPTIONS
+----------
+The following content is NOT covered by CC0:
+- All files within: /withcopyright/*
+  © 2025 y777_yotuba777. All Rights Reserved.
+  → Requires explicit prior written permission for any use
+
+THIRD-PARTY CONTENT
+-------------------
+Materials NOT created by y777_yotuba777 :
+• Are subject to their respective copyright holders and licenses
+• May require separate permissions for use
+• Should be verified at source for licensing terms
+
+Verification:
+- CC0 Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/
+- Copyright status of exceptions: Explicitly marked in file metadata within /withcopyright/
+- Third-party rights: Attributed where feasible per applicable laws
+
+Last updated: 2025-12-14
