@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yotuba777のホームページ</title>
-    <link rel="icon" type="image/png" sizes="300x300" href="/withcopyright/y7.png">
+    <link rel="icon" type="image/png" href="/withcopyright/y7.png">
     <style>
         * {
             box-sizing: border-box;
@@ -28,7 +28,6 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 24px;
-            flex-shrink: 0;
         }
 
         .header-logo {
@@ -39,7 +38,6 @@
 
         .logo-img {
             height: 36px;
-            width: auto;
             vertical-align: middle;
         }
 
@@ -59,21 +57,19 @@
         }
         
         .header-menu-btn::after {
-            content: "⋮"; 
-            font-weight: bold;
+            content: "⋮";
         }
 
         .content-wrapper {
             background-color: #000;
             display: flex;
-            flex-direction: column;
-            flex: 1 0 auto; 
-            border-radius: 20px;
-            margin: 0; 
+            flex: 1;
+            border-radius: 30px;
+            margin: 0;
         }
 
         main {
-            flex: 1; 
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -88,13 +84,18 @@
 
         footer {
             background-color: #111;
-            padding: 30px 24px 20px 24px;
+            padding: 30px 24px 20px;
             font-size: 12px;
-            flex-shrink: 0; 
         }
 
-        a { color: #4da6ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a { 
+            color: #4da6ff; 
+            text-decoration: none; 
+        }
+        
+        a:hover { 
+            text-decoration: underline; 
+        }
 
         .footer-content {
             display: flex;
@@ -111,7 +112,7 @@
         .footer-section h3 {
             font-size: 12px;
             font-weight: normal;
-            color: #ccc;
+            color: #fff;
             margin-bottom: 4px;
         }
 
@@ -121,16 +122,16 @@
             gap: 8px;
         }
 
-        .footer-contact, .footer-license {
-            line-height: 1.4;
-            color: #e0e0e0;
+        .footer-license {
+            color: #eee;
         }
 
-        .footer-right { text-align: right; }
+        .footer-right { 
+            text-align: right; 
+        }
 
         .site-id {
             font-size: 24px;
-            font-weight: normal;
             color: #fff;
             letter-spacing: 1px;
         }
@@ -140,26 +141,18 @@
             color: #888;
             font-size: 11px;
         }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 1.5rem; }
-            .footer-content { flex-direction: column; align-items: flex-start; }
-            .footer-right { width: 100%; text-align: right; margin-top: 20px; }
-            .content-wrapper { border-radius: 20px; }
-        }
     </style>
 </head>
 <body>
-
     <header>
         <div class="header-logo">
-            <picture class="logo-picture">
+            <picture>
                 <source srcset="/withcopyright/logo.svg" type="image/svg+xml">
                 <source srcset="/withcopyright/logo.png" type="image/png">
                 <img src="/withcopyright/logo.jpg" alt="y777" class="logo-img">
             </picture>
         </div>
-        <button class="header-menu-btn" id="menuBtn" aria-label="Menu"></button>
+        <button class="header-menu-btn" id="menuBtn" aria-label="メニュー"></button>
     </header>
 
     <div class="content-wrapper">
@@ -174,19 +167,17 @@
                 <div class="footer-section">
                     <h3>SNS</h3>
                     <div class="footer-links">
-                        <a href="https://x.com/y777_yotuba777  ">[Twitter (1)]</a>
-                        <a href="https://x.com/Twit_yotuba777  ">[Twitter (2)]</a>
-                        <a href="https://x.com/Yotuba777_Sub  ">[Twitter (Sub)]</a>
-                        <a href="yotuba777onbluesky.bsky.social">[Bluesky]</a>
-                        <a href="https://github.com/y777-yotuba777  ">[GitHub]</a>
+                        <a href="https://x.com/y777_yotuba777">[Twitter (1)]</a>
+                        <a href="https://x.com/Twit_yotuba777">[Twitter (2)]</a>
+                        <a href="https://x.com/Yotuba777_Sub">[Twitter (Sub)]</a>
+                        <a href="https://yotuba777onbluesky.bsky.social">[Bluesky]</a>
+                        <a href="https://github.com/y777-yotuba777">[GitHub]</a>
                     </div>
                 </div>
 
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <div class="footer-contact">
-                        <a href="mailto:y777@y777.uk">y777@y777.uk</a>
-                    </div>
+                    <a href="mailto:y777@y777.uk">y777@y777.uk</a>
                 </div>
 
                 <div class="footer-section">
@@ -209,8 +200,7 @@
     </footer>
 
     <script>
-        const menuBtn = document.getElementById('menuBtn');
-        menuBtn.addEventListener('click', () => {
+        document.getElementById('menuBtn').addEventListener('click', () => {
             alert('テスト段階');
         });
     </script>
