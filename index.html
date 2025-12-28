@@ -1,225 +1,356 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yotuba777のホームページ</title>
-    <link rel="icon" type="image/png" href="/withcopyright/y7.png">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>yotuba777のホームページ</title>
+        <link rel="icon" type="image/png" href="/withcopyright/y7.png">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
-        }
+            body {
+                background-color: #111;
+                color: #fff;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+                min-height: 100dvh;
+                display: flex;
+                flex-direction: column;
+            }
 
-        header {
-            background-color: #111;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 24px;
-        }
+            header {
+                background-color: #111;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 24px;
+            }
 
-        .header-logo {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
+            .header-logo {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
 
-        .logo-img {
-            height: 36px;
-            vertical-align: middle;
-        }
+            .logo-img {
+                height: 36px;
+                vertical-align: middle;
+            }
 
-        .header-menu-btn {
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 20px;
-            cursor: pointer;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: #000;
-        }
-        
-        .header-menu-btn::after {
-            content: "⋮";
-        }
-
-        .content-wrapper {
-            background-color: #000;
-            display: flex;
-            flex: 1;
-            border-radius: 30px;
-            margin: 0;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #111;
-            padding: 30px 24px 20px;
-            font-size: 12px;
-        }
-
-        a { 
-            color: #4da6ff; 
-            text-decoration: none; 
-        }
-        
-        a:hover { 
-            text-decoration: underline; 
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-
-        .footer-left {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .footer-section h3 {
-            font-size: 12px;
-            font-weight: normal;
-            color: #fff;
-            margin-bottom: 4px;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .footer-license {
-            color: #eee;
-        }
-
-        .footer-right { 
-            text-align: right; 
-        }
-
-        .site-id {
-            font-size: 24px;
-            color: #fff;
-            letter-spacing: 1px;
-        }
-
-        .version {
-            margin-top: 10px;
-            color: #888;
-            font-size: 11px;
-        }
-
-        @media (max-width: 600px) {
-            h1 { 
-                font-size: 1.5rem; 
+            .header-menu-btn {
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: #000;
             }
             
-            .footer-content { 
-                flex-direction: column; 
-                align-items: flex-start; 
+            .header-menu-btn::after {
+                content: "⋮";
+            }
+
+            .content-wrapper {
+                background-color: #000;
+                display: flex;
+                flex: 1;
+                border-radius: 30px;
+                margin: 0;
+            }
+
+            main {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 3rem;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            footer {
+                background-color: #111;
+                padding: 30px 24px 20px;
+                font-size: 12px;
+            }
+
+            a { 
+                color: #4da6ff; 
+                text-decoration: none; 
             }
             
+            a:hover { 
+                text-decoration: underline; 
+            }
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+            .footer-left {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-section h3 {
+                font-size: 12px;
+                font-weight: normal;
+                color: #fff;
+                margin-bottom: 4px;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .footer-license {
+                color: #eee;
+            }
+
             .footer-right { 
-                width: 100%; 
                 text-align: right; 
-                margin-top: 20px; 
             }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-            <picture>
-                <source srcset="/withcopyright/logo.svg" type="image/svg+xml">
-                <source srcset="/withcopyright/logo.png" type="image/png">
-                <img src="/withcopyright/logo.jpg" alt="y777" class="logo-img">
-            </picture>
-        </div>
-        <button class="header-menu-btn" id="menuBtn" aria-label="メニュー"></button>
-    </header>
 
-    <div class="content-wrapper">
-        <main>
-            <h1>yotuba777のホームページ</h1>
-        </main>
-    </div>
+            .site-id {
+                font-size: 24px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="footer-section">
-                    <h3>SNS</h3>
-                    <div class="footer-links">
-                        <a href="https://x.com/y777_yotuba777">[Twitter (1)]</a>
-                        <a href="https://x.com/Twit_yotuba777">[Twitter (2)]</a>
-                        <a href="https://x.com/Yotuba777_Sub">[Twitter (Sub)]</a>
-                        <a href="https://yotuba777onbluesky.bsky.social">[Bluesky]</a>
-                        <a href="https://github.com/y777-yotuba777">[GitHub]</a>
-                    </div>
-                </div>
+            .version {
+                margin-top: 10px;
+                color: #888;
+                font-size: 11px;
+            }
 
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <a href="mailto:y777@y777.uk">y777@y777.uk</a>
-                </div>
+            @media (max-width: 320px) {
+                h1 {
+                    font-size: 1.2rem;
+                }
 
-                <div class="footer-section">
-                    <h3>Licenses</h3>
-                    <div class="footer-license">
-                        &copy; 2025 y777_yotuba777<br>
-                        Content is dedicated to the public domain under CC0 1.0 with some EXCEPT (check details)<br>
-                        Third-party content is subject to respective licenses<br>
-                        <a href="/licenses.txt" class="details-link">Details</a>
-                    </div>
-                </div>
+                header {
+                    padding: 0 12px;
+                }
 
-                <div class="version">v3.0.0 β</div>
+                main {
+                    padding: 24px 12px;
+                }
+
+                .footer-content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .footer-right {
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 16px;
+                }
+
+                .footer-links {
+                    gap: 4px;
+                    flex-direction: column;
+                }
+
+                .footer-links a {
+                    font-size: 11px;
+                }
+
+                .site-id {
+                    font-size: 18px;
+                }
+            }
+
+            @media (min-width: 321px) and (max-width: 480px) {
+                h1 {
+                    font-size: 1.4rem;
+                }
+
+                header {
+                    padding: 0 16px;
+                }
+
+                main {
+                    padding: 32px 16px;
+                }
+
+                .footer-links {
+                    gap: 6px;
+                }
+
+                .footer-links a {
+                    font-size: 12px;
+                }
+
+                .site-id {
+                    font-size: 20px;
+                }
+            }
+
+            @media (min-width: 481px) and (max-width: 600px) {
+                h1 {
+                    font-size: 1.6rem;
+                }
+
+                header {
+                    padding: 0 20px;
+                }
+
+                main {
+                    padding: 40px 20px;
+                }
+
+                .footer-content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .footer-right {
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 20px;
+                }
+
+                .footer-links {
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+
+                .footer-links a {
+                    font-size: 12px;
+                }
+
+                .site-id {
+                    font-size: 22px;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 768px) {
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                header {
+                    padding: 0 24px;
+                }
+
+                main {
+                    padding: 50px 30px;
+                }
+
+                .footer-content {
+                    flex-direction: row;
+                    align-items: flex-end;
+                }
+
+                .footer-right {
+                    margin-top: 0;
+                }
+
+                .footer-left {
+                    flex: 1;
+                }
+
+                .footer-right {
+                    flex-shrink: 0;
+                    margin-left: 24px;
+                }
+
+                .site-id {
+                    font-size: 24px;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                h1 {
+                    font-size: 2.4rem;
+                }
+
+                main {
+                    padding: 60px 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <picture>
+                    <source srcset="/withcopyright/logo.svg" type="image/svg+xml">
+                    <source srcset="/withcopyright/logo.png" type="image/png">
+                    <img src="/withcopyright/logo.jpg" alt="y777" class="logo-img">
+                </picture>
             </div>
+            <button class="header-menu-btn" id="menuBtn" aria-label="メニュー"></button>
+        </header>
 
-            <div class="footer-right">
-                <div class="site-id">test.y777.uk</div>
-            </div>
+        <div class="content-wrapper">
+            <main>
+                <h1>yotuba777のホームページ</h1>
+            </main>
         </div>
-    </footer>
 
-    <script>
-        document.getElementById('menuBtn').addEventListener('click', () => {
-            alert('テスト段階');
-        });
-    </script>
-</body>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-section">
+                        <h3>SNS</h3>
+                        <div class="footer-links">
+                            <a href="https://x.com/y777_yotuba777">[Twitter (1)]</a>
+                            <a href="https://x.com/Twit_yotuba777">[Twitter (2)]</a>
+                            <a href="https://x.com/Yotuba777_Sub ">[Twitter (Sub)]</a>
+                            <a href="https://yotuba777onbluesky.bsky.social">[Bluesky]</a>
+                            <a href="https://github.com/y777-yotuba777">[GitHub]</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <a href="mailto:y777@y777.uk">y777@y777.uk</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Licenses</h3>
+                        <div class="footer-license">
+                            &copy; 2025 y777_yotuba777<br>
+                            Content is dedicated to the public domain under CC0 1.0 with some EXCEPT (check details)<br>
+                            Third-party content is subject to respective licenses<br>
+                            <a href="/licenses.txt" class="details-link">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="version">v3.0.0 β</div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="site-id">test.y777.uk</div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('menuBtn').addEventListener('click', () => {
+                alert('テスト段階');
+            });
+        </script>
+    </body>
 </html>
